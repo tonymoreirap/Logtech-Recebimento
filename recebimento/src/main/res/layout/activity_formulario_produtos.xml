@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cadastro.logtech.integracaocad.Atividades.FormularioProdutos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="-7dp">
+
+        <EditText
+            android:id="@+id/editText_CodBarra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Inserir Cod. Barra"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText_NomeProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Inserir nome"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_Descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Descrição do Produto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_Emb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="Embalagem"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_Fat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="Fator"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_QtdPed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="25"
+            android:hint="Qtde. Pedida"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_Quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Qtde CX."
+            android:inputType="number" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="401dp">
+
+            <Switch
+                android:id="@+id/btn_habdestecla"
+                android:layout_width="wrap_content"
+                android:text=" teclado" />
+
+            <Switch
+                android:id="@+id/btn_scancodbar"
+                android:layout_width="wrap_content"
+                android:text=" codbarra" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listview_Produtos"
+            android:layout_width="match_parent"
+            android:layout_height="131dp" />
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="21dp"
+            android:layout_gravity="bottom"></TextView>
+
+        <TableRow
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="401dp"
+            android:layout_gravity="center|center_vertical">
+
+            <Button
+                android:id="@+id/btn_Gravaprod"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:background="@color/colorAccent"
+                android:text="SALVAR"
+                android:textColor="#ffffff" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="21dp"
+            android:layout_gravity="bottom">
+        </TextView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

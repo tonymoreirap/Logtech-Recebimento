@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:tooltipText="com.cadastro.logtech.integracaocad.Atividades.RegistraActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celular" />
+
+    <EditText
+        android:id="@+id/edtCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senha" />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TableRow
+        android:layout_width="401dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_GravaUsuario"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:text="INCLUIR" />
+
+        <Button
+            android:id="@+id/btn_AlterarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALTERAR" />
+
+        <Button
+            android:id="@+id/btn_ExcluirUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXCLUIR" />
+
+        <Switch
+            android:id="@+id/btn_habdestecla"
+            android:layout_width="wrap_content"
+            android:text=" teclado " />
+
+    </TableRow>
+
+    <ListView
+        android:id="@+id/listview_Usuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

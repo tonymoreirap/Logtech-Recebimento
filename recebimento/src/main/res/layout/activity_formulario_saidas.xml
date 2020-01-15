@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Atividades.Formulariosaidas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="-7dp">
+
+        <EditText
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#041B72"
+            android:textColor="#ffffff"
+            android:text="Conferencia de Saida"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="bottom"></TextView>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="401dp">
+
+            <Switch
+                android:id="@+id/btn_habdestecla"
+                android:layout_width="wrap_content"
+                android:text=" teclado" />
+            <Switch
+                android:id="@+id/btn_scancodbar"
+                android:layout_width="wrap_content"
+                android:text=" leitor codbarra" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Produto">
+        </TextView>
+
+        <EditText
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/editText_NomeProduto"
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:background="#FAEEA2"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Descrição do Produto"
+            android:inputType="textMultiLine"
+            android:textSize="30dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="401dp">
+
+            <EditText
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/editText_CodBarra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Consulta Cod. Barra"
+                android:inputType="number" />
+        </TableRow>
+
+        <!-- ========================================= -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="401dp">
+
+            <TextView
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Emb."></TextView>
+
+            <TextView
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"></TextView>
+
+            <TextView
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Fator"></TextView>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"></TextView>
+
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Qt.Pedida"></TextView>
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Qtde."></TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="401dp">
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/editText_Emb"
+                android:layout_width="65dp"
+                android:layout_height="34dp"
+                android:background="#FAEEA2"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_gravity="bottom"></TextView>
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/editText_Fat"
+                android:layout_width="50dp"
+                android:layout_height="34dp"
+                android:background="#F0717A"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_gravity="bottom"></TextView>
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/editText_QtdPed"
+                android:layout_width="64dp"
+                android:layout_height="34dp"
+                android:background="#FAEEA2"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_gravity="bottom"></TextView>
+
+            <EditText
+                android:id="@+id/editText_Quantidade"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+        <!-- ========================================= -->
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="21dp"
+            android:layout_gravity="bottom">
+        </TextView>
+
+        <TableRow
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="401dp"
+            android:layout_gravity="center|center_vertical">
+
+            <Button
+                android:id="@+id/btn_GravaSaida"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:background="@color/colorAccent"
+                android:text="SALVAR"
+                android:textColor="#ffffff" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

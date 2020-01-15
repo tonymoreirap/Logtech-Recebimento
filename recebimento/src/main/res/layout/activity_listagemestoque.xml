@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Atividades.Formulariolistagemestoque">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="-7dp">
+
+            <EditText
+                android:id="@+id/editText_Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAEEA2"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="  Cod.                                      Descr.Prod.                                      Saldo   "
+                android:scrollbars="horizontal"
+                android:textSize="15dp" />
+
+            <ListView
+                android:id="@+id/listview_Saldo"
+                android:layout_width="538dp"
+                android:layout_height="380dp"
+                android:scrollbars="horizontal" />
+                    <TableRow
+                        android:layout_width="286dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="center|center_vertical"
+                        tools:layout_editor_absoluteX="10dp"
+                        tools:layout_editor_absoluteY="401dp">
+
+                        <Button
+                            android:id="@+id/btn_Retorna"
+                            android:layout_width="283dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            android:background="@color/colorAccent"
+                            android:text="RETORNAR"
+                            android:textColor="#ffffff" />
+                    </TableRow>
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>

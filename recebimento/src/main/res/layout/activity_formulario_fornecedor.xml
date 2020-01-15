@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cadastro.logtech.integracaocad.Atividades.FormularioFornecedores">
+
+    <LinearLayout
+        android:layout_width="418dp"
+        android:layout_height="395dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="-7dp">
+
+
+        <EditText
+            android:id="@+id/editText_NomeFornec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome fornecedor"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_RazaoSoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Razao Social"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_Cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="CNPJ"
+            android:inputType="textPersonName" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_Gravafornec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INCLUIR" />
+
+            <Button
+                android:id="@+id/btn_Alterafornec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALTERAR" />
+
+            <Button
+                android:id="@+id/btn_Excluirfornec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXCLUIR" />
+
+            <Switch
+                android:id="@+id/btn_habdestecla"
+                android:layout_width="wrap_content"
+                android:text=" teclado" />
+
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listview_Fornecedores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

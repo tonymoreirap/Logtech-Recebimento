@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cadastro.logtech.integracaocad">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateAlwaysHidden">
+        <activity android:name=".Atividades.Formulariosaidas" />
+        <activity android:name=".Atividades.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Atividades.HomeActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Atividades.RegistrarActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Atividades.FormularioProdutos"
+                  android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".Atividades.FormularioFornecedores"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Atividades.FormularioClientes"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Atividades.Formularioentradas"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Atividades.Formulariolistagemestoque"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Atividades.Formularioextratoestoque"
+                  android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

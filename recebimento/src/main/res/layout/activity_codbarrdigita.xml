@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cadastro.logtech.integracaocad.Atividades.FormularioDigitaCodbarra"
+    tools:ignore="ResourceName"
+    android:background="@color/zxing_status_text">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Código de barras" />
+
+    <Button
+        android:id="@+id/zxing_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="Limpar" />
+
+    <EditText
+        android:id="@+id/TXT_CodBarr"
+        android:layout_width="match_parent"
+        android:layout_height="391dp"
+        android:ems="20"
+        android:inputType="number"
+        android:text="123456789" />
+
+    <Button
+        android:id="@+id/BTN_Continuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar" />
+
+    <Button
+        android:id="@+id/BTN_habteclado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Habilita/Desabilita Teclado" />
+
+
+</LinearLayout>
